@@ -39,7 +39,7 @@ steps:
   displayName: 'Publish NuGet package'
   inputs:
     command: push
-    nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
+    includeNuGetOrg: true
     publishVstsFeed: 'Tailspin.SpaceGame.Web.Models'
     allowPackageConflicts: true
   condition: succeeded()
