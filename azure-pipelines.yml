@@ -39,6 +39,9 @@ steps:
   displayName: 'Publish NuGet package'
   inputs:
     command: push
-    feedsToUse: config
+    feedsToUse: 'select'
+    includeNuGetOrg: true
+    vstsFeed: Basic/Tailspin.SpaceGame.Web.Models
+    publishVstsFeed: Basic/Tailspin.SpaceGame.Web.Models
     allowPackageConflicts: true
   condition: succeeded()
